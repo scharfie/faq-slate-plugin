@@ -1,0 +1,7 @@
+<% heading 'FAQs' %>
+
+<% toolbar_link 'Create new FAQ', new_resource_path %>
+
+<% resources.each do |faq| %>
+  <%= link_to faq.question, edit_resource_path(faq) %><br />
+<% end %>

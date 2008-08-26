@@ -1,0 +1,7 @@
+<%= form.text_field :question %>
+<%= form.text_area  :answer %>
+
+<% form.actions do %>
+  <%= submit_tag 'Save' %>
+  or <%= link_to 'Cancel', resources_path %>
+<% end %>
